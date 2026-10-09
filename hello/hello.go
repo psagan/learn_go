@@ -15,8 +15,8 @@ func main() {
 	log.SetPrefix("greetings: ")
 	log.SetFlags(0)
 
-	names := []string{"Patryk", "Natalia", "Mikołaj", "Wiktoria"}
-
+	names := []string{"Patrick", "Kate"}
+	// names := imiona()
 	messages, err := greetings.Hellos(names)
 	// If an error was returned, print it to the console and
 	// exit the program.
@@ -28,3 +28,7 @@ func main() {
 	// to the console.
 	fmt.Println(messages)
 }
+
+// func imiona() []string {
+// 	return []string{"Patrick", "Kate"}
+// }
